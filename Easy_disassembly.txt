@@ -1,0 +1,50 @@
+
+Easy.exe:     file format pei-x86-64
+
+
+Disassembly of section .text:
+
+0000000140001000 <.text>:
+   140001000:	48 83 ec 38          	sub    rsp,0x38
+   140001004:	31 c9                	xor    ecx,ecx
+   140001006:	48 8d 15 f3 0f 00 00 	lea    rdx,[rip+0xff3]        # 0x140002000
+   14000100d:	45 31 c0             	xor    r8d,r8d
+   140001010:	4c 8d 0d 69 00 00 00 	lea    r9,[rip+0x69]        # 0x140001080
+   140001017:	48 c7 44 24 20 00 00 	mov    QWORD PTR [rsp+0x20],0x0
+   14000101e:	00 00 
+   140001020:	ff 15 5a 12 00 00    	call   QWORD PTR [rip+0x125a]        # 0x140002280
+   140001026:	31 c9                	xor    ecx,ecx
+   140001028:	ff 15 72 12 00 00    	call   QWORD PTR [rip+0x1272]        # 0x1400022a0
+
+Easy.exe:     file format pei-x86-64
+
+
+Disassembly of section .text:
+
+0000000140001080 <.text+0x80>:
+   140001080:	81 fa 10 01 00 00    	cmp    edx,0x110
+   140001086:	74 37                	je     0x1400010bf
+   140001088:	81 fa 11 01 00 00    	cmp    edx,0x111
+   14000108e:	74 0a                	je     0x14000109a
+   140001090:	83 fa 10             	cmp    edx,0x10
+   140001093:	74 30                	je     0x1400010c5
+   140001095:	31 c0                	xor    eax,eax
+   140001097:	c3                   	ret
+   140001098:	90                   	nop
+   140001099:	90                   	nop
+   14000109a:	41 83 f8 01          	cmp    r8d,0x1
+   14000109e:	75 f5                	jne    0x140001095
+   1400010a0:	48 83 ec 28          	sub    rsp,0x28
+   1400010a4:	48 8d 15 55 10 00 00 	lea    rdx,[rip+0x1055]        # 0x140002100
+   1400010ab:	4c 8d 05 8e 10 00 00 	lea    r8,[rip+0x108e]        # 0x140002140
+   1400010b2:	45 31 c9             	xor    r9d,r9d
+   1400010b5:	ff 15 d5 11 00 00    	call   QWORD PTR [rip+0x11d5]        # 0x140002290
+   1400010bb:	48 83 c4 28          	add    rsp,0x28
+   1400010bf:	b8 01 00 00 00       	mov    eax,0x1
+   1400010c4:	c3                   	ret
+   1400010c5:	48 83 ec 28          	sub    rsp,0x28
+   1400010c9:	31 d2                	xor    edx,edx
+   1400010cb:	ff 15 b7 11 00 00    	call   QWORD PTR [rip+0x11b7]        # 0x140002288
+   1400010d1:	48 83 c4 28          	add    rsp,0x28
+   1400010d5:	b8 01 00 00 00       	mov    eax,0x1
+   1400010da:	c3                   	ret
